@@ -4,7 +4,7 @@ Hi everyone！
 
 This blog is for my App development project in HKU, and I'd like to orgainze it and share the project to you. For more information about this App, here is the [demo](https://youtu.be/wLwp-sWVtWI).
 
-** This is a group project and my other two teammates are Meng Liuchen and Lu Yuhan, thanks a lot for there hardwork in this project!**
+**This is a group project and my other two teammates are Meng Liuchen and Lu Yuhan, thanks a lot for there hardwork in this project!**
 
 
 # 1 Basic Information

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:background="@drawable/backgroundmain"
+>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/title"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="26dp">
+
+        <ImageView
+            android:id="@+id/running"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/manrun"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/btn3"
+            android:layout_toStartOf="@+id/btn3" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_start"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_grade" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_edit"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/winner"
+    android:layout_alignTop="@+id/running"
+    android:id="@+id/castle"
+    android:layout_alignParentEnd="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/princess"
+            android:layout_alignTop="@+id/running"
+
+            android:layout_toLeftOf="@id/castle"/>
+    </RelativeLayout>
+
+</LinearLayout>

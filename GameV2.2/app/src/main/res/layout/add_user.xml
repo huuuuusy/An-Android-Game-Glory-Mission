@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="hku.game.addUser"
+    android:orientation="vertical"
+    android:background="@drawable/background1">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/title"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="156dp"
+        android:id="@+id/lin1">
+
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="@string/username_hint"
+            android:gravity="center_vertical"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:background="@layout/textview"
+            android:maxLength="24"
+            android:layout_marginTop="5dip"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lin1"
+        android:id="@+id/lin2">
+
+        <TextView
+            android:id="@+id/password_tv"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password_hint"
+            android:gravity="center_vertical"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:maxLength="24"
+            android:layout_marginTop="5dip"
+            android:background="@layout/textview"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lin2">
+<Button
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:layout_weight="0.25"
+    android:background="@drawable/icon_back"
+    android:layout_gravity="center_horizontal"
+    android:textAppearance="@android:style/TextAppearance.Medium"
+    android:id="@+id/back_button"/>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.25"
+            android:onClick="saveUser"
+            android:background="@drawable/icon_save"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+    </LinearLayout>
+</RelativeLayout>

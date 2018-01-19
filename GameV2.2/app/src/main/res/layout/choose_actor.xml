@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hku.game.MainActivity"
+    android:background="@drawable/backgroundmain"
+    >
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:src="@drawable/choseactor"
+    android:layout_marginTop="22dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/imageView" />
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:background="@drawable/qian"
+        android:id="@+id/men"
+        android:layout_marginStart="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="121dp"></Button>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="A brave boy."
+        android:textSize="15dp"
+        android:background="@drawable/txtback"
+        android:layout_alignTop="@+id/men"
+        android:layout_toEndOf="@+id/men" />
+    <Button
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:background="@drawable/womenqian"
+        android:id="@+id/women"
+        android:layout_below="@+id/men"
+        android:layout_alignStart="@+id/men"></Button>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="A brave girl."
+        android:textSize="15dp"
+        android:background="@drawable/txtback"
+        android:layout_alignTop="@+id/women"
+        android:layout_toEndOf="@+id/women" />
+
+</RelativeLayout>
